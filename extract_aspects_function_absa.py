@@ -21,12 +21,7 @@ from seq_utils import ot2bieos_ts, bio2ot_ts, tag2ts
 
 
 
-### first amenity_funciton, then LDA and then hotel_similarity should be run first before this script
-
-
-
-
-# Run Bert review
+# This is code from Li et al. (2019) from https://github.com/lixin4ever/BERT-E2E-ABSA modified to be used for tip mining and for the data.
 
 #ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (BertConfig, XLNetConfig)), ())
 ALL_MODELS = (
