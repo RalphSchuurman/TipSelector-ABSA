@@ -6,7 +6,7 @@ This repo is for an addition of TipSelector by Zhu et al. (2018). It adds Aspect
 ## How to use
 
 - Install the required libraries from the requirements.txt file
-- Paste the two TipSelector data files (landing_pages and parsed) in the hotel_data file
+- Paste the two TipSelector data files (landing_pages and parsed) in the hotel_data file. These can be found on https://tinyurl.com/TipSelectorData and was prepared by Zhu et al. (2018).
 - Download the BERT model from this GDrive link and unzip: https://drive.google.com/file/d/1x_GIdWwMuLZvnuoXAgStt8w4JyAX-2sN/view?usp=sharing
 - Paste the BERT model in the main folder. Make sure that ./BERT_Review/config.json exists
 - Run either create_tips_absa.py or create_tips_baseline.py for the Baseline method
@@ -30,7 +30,7 @@ python create_tips_baseline.py
 - create_synsets_function.py creates the synsets for the information tokens and compares them using Wu & Palmer similarity (Wu & Palmer, 1994).
 - create_tips_absa.py is the main file to create tips using the proposed ABSA method
 - create_tips_baseline.py is the main file to create tips using the Baseline method
-- extract_aspects_function_absa.py extracts performs ABSA to extract information tokens (aspects) and sentiment using BERT. This is code from Li et al. (2019) modified to return aspects and sentiments.
+- extract_aspects_function_absa.py extracts performs ABSA to extract information tokens (aspects) and sentiment using BERT. This is code from Li et al. (2019) modified to return aspects and sentiments and modified to work on the TipSelector Data.
 - extract_tokens_baseline.py extracts information tokens using the baseline method
 - LDA_function.py performs LDA to find similar hotels in combination with the amenities
 - BERT_Review contains the post-trained BERT model from Xu et al. (2019) with the ABSA layer from Li et al. (2019)
