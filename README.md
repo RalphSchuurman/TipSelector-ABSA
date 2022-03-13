@@ -23,14 +23,14 @@ python create_tips_baseline.py
 
 
 ## Explanations
-- absa_laye.pyr, bert.py, get-pip.py, glue_utils.py, seq_utils.py and bert_utils.py are from Li. et al. (2019)
+- absa_layer.py, bert.py, get-pip.py, glue_utils.py, seq_utils.py and bert_utils.py are from Li. et al. (2019)
 - amenity_function.py finds the amenities of the hotels in the city-price stratum and hot one encodes them
 - compare_aspects_function.py compares the information tokens of the different hotels to check if they appear significantly more
 - cover_tokens_function.py selects the sentences to cover the information tokens
 - create_synsets_function.py creates the synsets for the information tokens and compares them using Wu & Palmer similarity (Wu & Palmer, 1994).
 - create_tips_absa.py is the main file to create tips using the proposed ABSA method
 - create_tips_baseline.py is the main file to create tips using the Baseline method
-- extract_aspects_function_absa.py extracts performs ABSA to extract information tokens (aspects) and sentiment using BERT
+- extract_aspects_function_absa.py extracts performs ABSA to extract information tokens (aspects) and sentiment using BERT. This is code from Li et al. (2019) modified to return aspects and sentiments.
 - extract_tokens_baseline.py extracts information tokens using the baseline method
 - LDA_function.py performs LDA to find similar hotels in combination with the amenities
 - BERT_Review contains the post-trained BERT model from Xu et al. (2019) with the ABSA layer from Li et al. (2019)
