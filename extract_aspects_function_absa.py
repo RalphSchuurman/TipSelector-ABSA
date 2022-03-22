@@ -94,9 +94,9 @@ def load_and_cache_examples(args, task, tokenizer):
 
 def init_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--absa_home", type=str, default ="./BERT_Review",
+    parser.add_argument("--absa_home", type=str, default ="./BERT_Review_finetuned",
                         required=False, help="Home directory of the trained ABSA model")
-    parser.add_argument("--ckpt", type=str, default = "./BERT_Review" + "/checkpoint-1200",
+    parser.add_argument("--ckpt", type=str, default = "./BERT_Review_finetuned" + "/full_model",
                         required=False, help="Directory of model checkpoint for evaluation")
     parser.add_argument("--data_dir", default = "./data/" + "d7331226.txt",
                         type=str, required=False,
