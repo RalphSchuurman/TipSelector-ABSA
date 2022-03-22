@@ -8,8 +8,8 @@ This repo is for an addition of TipSelector by Zhu et al. (2018). It adds Aspect
 - Install the required libraries from the requirements.txt file
 - Paste the two TipSelector data files (landing_pages and parsed) in the hotel_data file. These can be found on https://tinyurl.com/TipSelectorData and was prepared by Zhu et al. (2018).
 - Download the BERT model from this GDrive link and unzip: https://drive.google.com/file/d/1x_GIdWwMuLZvnuoXAgStt8w4JyAX-2sN/view?usp=sharing
-- Paste the BERT model in the main folder. Make sure that ./BERT_Review/config.json exists
-- Run either create_tips_absa.py or create_tips_baseline.py for the Baseline method
+- Paste the BERT model in the main folder. Make sure that ./BERT_Review_finetuned/config.json exists
+- Run either create_tips_absa.py for the new ABSA method or create_tips_baseline.py for the Baseline method
 ```sh
 python create_tips_absa.py
 ```
