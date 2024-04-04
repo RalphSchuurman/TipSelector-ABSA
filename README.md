@@ -1,5 +1,5 @@
 # Aspect-Based Sentiment Analysis for Tip Mining
-##### By Ralph Schuurman (Master Thesis) for the Master Data Science & Marketing Analytics
+##### Ralph Schuurman, Flavius Frasincar & Jasmijn Klinkhamer
 
 This repo is for an addition of TipSelector by Zhu et al. (2018). It adds Aspect-Based Sentiment Analysis (ABSA) to the method and the possibility to create smaller tips. In the repo my interpretation of the method from Zhu et al. (2018) can also be found. The implementation is done in Python 3.8. The post-trained BERT_Review model from Xu et al. (2019) was used in combination with the ABSA layer from Li. et al (2019).
 
